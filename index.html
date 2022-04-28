@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <nav>
-            <main>
+        <header>
+            <nav>
                 <ul>
                     <li class="alinha-esquerda"><a href="">Logotipo</a></li>
+                    <li id="menu-responsivo"><i class="fa-solide fa-bars fa-2x" onclick="exibeMenu()" </i></li>
+                    <div id="exibe-menu"></div>
                     <li><a href="#bolos-e-Tortas">Bolos e Tortas</a></li>
                     <li><a href="#carnes">Carnes</a></li>
                     <li><a href="#aves">Aves</a></li>
@@ -23,44 +25,66 @@
                     <li><a href="#sopas">Sopas</a></li>
                     <li><a href="#bebidas">Bebidas</a></li>
                     <li><a href="#doces-e-sobremesas">Doces e Sobremesas</a></li>
-                </ul> 
+                </ul>
+            </nav>
+        </header>
 
-                <div id="banner">
-                    <!-- aqui fica o banner e banner rotativo -->
-                    Banner
-                </div>
-            </main>
-        </nav>
+        <main>
 
-        <!-- aqui começa a receita -->
-        <h1>Pudim de leite condensado</h1>
+            <!-- aqui começa a receita -->
+            <h1>Pudim de leite condensado</h1>
 
-        <h2>Ingrdientes</h2>
-        <ul>
-            <li>Pudim</li>
-            <li>1 Lata de leite condensado</li>
-            <li>3 ovos inteiros</li>
-            <li>Calda</li>
-            <li>1 Xícara(chá)de açúcar</li>
-        </ul>
+            <h2>Ingrdientes</h2>
+            <ul>
+                <li>Pudim</li>
+                <li>1 Lata de leite condensado</li>
+                <li>3 ovos inteiros</li>
+                <li>Calda</li>
+                <li>1 Xícara(chá)de açúcar</li>
+            </ul>
 
-        <h2>Modo de preparo</h2>
+            <h2>Modo de preparo</h2>
 
-        <ol>
-            <li>Pudim</li>
-            <li>Primeiro, bata bem os ovos no kliquidificador</li>
-            <li>Acrescente o leite condensado e o leite, e bata novamente</li>
-            <li>Calda</li>
-            <li>Derreta o açúcar na panela até fica moreno, acrescenta a água e deixe engrossar</li>
-            <li>Coloque em uma forma redonda e despeje a massa do pudim por cima</li>
-            <li>Asse em forno médiopor 45 minutos, com a assadeira redonda dentro de uma maior com água</li>
-            <li>Espete com garfo para ver se está bem assado</li>
-            <li>Deixe esfriar e desforme</li>
-        </ol>
+            <ol>
+                <li>Pudim</li>
+                <li>Primeiro, bata bem os ovos no kliquidificador</li>
+                <li>Acrescente o leite condensado e o leite, e bata novamente</li>
+                <li>Calda</li>
+                <li>Derreta o açúcar na panela até fica moreno, acrescenta a água e deixe engrossar</li>
+                <li>Coloque em uma forma redonda e despeje a massa do pudim por cima</li>
+                <li>Asse em forno médiopor 45 minutos, com a assadeira redonda dentro de uma maior com água</li>
+                <li>Espete com garfo para ver se está bem assado</li>
+                <li>Deixe esfriar e desforme</li>
+            </ol>
 
-        <div class="imagens">
-            <img src="img/istockphoto-1174449658-170667a.png" alt="" class="Pudim">
-        </div>
+            <div class="imagens">
+                <img src="img/istockphoto-1174449658-170667a.png" alt="" class="Pudim">
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy;Desenvolvido por: <span class="negrito">Angelo Marcio Pereira de Jesus</span></p>
+            <small>2022</small>
+        </footer>
+    </div>
+    <!-- Final do container -->
+    <!-- Scripts vão ficar abaixo -->
+    <!-- Importação do JS do fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- Importação do Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Ecript especifico da página -->
+    <!-- Linguagem JD = JavaScript -->
+    <script>
+        // Cria a função exibeMenu
+        function exibeMenu() {
+            // Exibe/oculta omenu mobile(hamburguer)
+            $('#exibe-menu').toggle()
+        }
+    </script>
 </body>
 
 </html>

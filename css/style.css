@@ -12,11 +12,6 @@ body {
     float: left;
 }
 
-header nav ul li a {
-    width:100%;
-    float: left;
-}
-
 nav {
     background-color: #ff8c00;
     width: 100%;
